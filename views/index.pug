@@ -3,4 +3,4 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  a(href='https://www.reddit.com/api/v1/authorize?client_id=KSxjvYh50ojEWA&response_type=code&state=none&redirect_uri=http://localhost:3001/authorize&duration=permanent&scope=identity') login
+  a.primary-button(href='https://www.reddit.com/api/v1/authorize?client_id=KSxjvYh50ojEWA&response_type=code&state=none&redirect_uri=http://localhost:3001/authorize&duration=permanent&scope=identity') Connect to Reddit
