@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome, #{name}!
-  form(method="post" action="/submit")
+  form(method="post" action="/secure/submit")
     input(type="hidden" name="name" value=`${name}`)
     p which parashah would you like to sign up for?
     select(name="parashah")
