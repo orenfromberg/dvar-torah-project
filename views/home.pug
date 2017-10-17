@@ -3,4 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome, #{name}!
-  h2 which dvar would you like to sign up for?
+  form(method="post" action="/submit")
+    input(type="hidden" name="name" value=`${name}`)
+    p which parashah would you like to sign up for?
+    select(name="parashah")
+      each parashah in parashot
+        option(value=`${parashah.date}`) !{parashah.title} (!{parashah.date})
+    input(type="submit")
